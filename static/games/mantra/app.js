@@ -1,7 +1,7 @@
 window.onload = function()
 {
     var timer = document.querySelector(".timer");
-    timer.innerHTML = "1 mins 0 secs";
+    timer.innerHTML = "0 mins 10 secs";
     var st = document.getElementsByClassName("start")
     console.log("DOM LOADED")
         // declare variables for star icons
@@ -12,7 +12,7 @@ window.onload = function()
     // var closeicon = document.querySelector(".close");
     // declare modal
     var modal = document.getElementById("popup1") 
-var second = 0, minute = 1; hour = 0;
+var second = 10, minute = 0; hour = 0;
 var timer = document.querySelector(".timer");
 var play = document.getElementById("play-again")
  
@@ -27,21 +27,21 @@ function startGame(){
     //     smile[i].style.visibility = "visible";
     // }
     //reset timer
-    second = 0;
-    minute = 1;
+    second = 10;
+    minute = 0;
     var st = document.getElementById("start")
     st.style.display = "block"
     clearInterval(interval);
-    startTimer();
+    startTimer(second,minute);
 }
 
-function startTimer(){
+function startTimer(second,minute){
     var timer = document.querySelector(".timer");
     interval = setInterval(function(){
         timer.innerHTML = minute+" mins "+second+" secs";
         if(second == 0){
             minute--;
-            second=3;
+            second=10;
         }
         second--;
         if(second == 0 && minute == 0){
@@ -81,7 +81,7 @@ function closemodal()
 
 function gohome()
 {
-    window.location.replace("http://127.0.0.1:5000/static/welcome.html")
+     window.location.replace("http://127.0.0.1:5000/static/games/playgames.html")
 }
 
 // // @description close icon on modal

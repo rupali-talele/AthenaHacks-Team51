@@ -102,6 +102,8 @@ function gohome()
 {
     var modal = document.getElementById("modal")
     modal.style.display = "block"
+       window.localStorage.setItem("smiles",Number(window.localStorage.getItem("smiles"))+1)
+   console.log(window.localStorage.getItem("smiles"))    
 }
 
 function closemodal()

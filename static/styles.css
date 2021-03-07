@@ -1,6 +1,6 @@
 body {
   background-color: #BFD8D2;
-  font-family: 'Coda', sans-serif;
+  font-family: "Coda",sans-serif;
 }
 h2 {
   padding: 10px;
@@ -31,15 +31,36 @@ form {
 .cards
 {
   display: flex;
-  width: 80vw;
-  
+  width: 60vw;
+  flex-wrap: wrap;
+}
+.move2 {
+    padding: 20px;
+    text-align: center;
 }
 
+.text
+{
+  width: 60vw;
+  margin: 5vh auto;
+}
+
+.home {
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(240, 169, 169);
+    text-align: center;
+    margin: auto;
+}
+.home:hover {
+    opacity: 0.8;
+}
 
 .cards_playgames
 {
   display: flex;
   width: 80vw;
+  flex-wrap: wrap;
   
 }
 a{
@@ -64,7 +85,7 @@ a:hover{
 
 .card_playgames{
   background-color: lightcoral;
-  width: 25vw;
+  width: 20vw;
   height: 30vh;
   margin: 1vh 1vw;
   display: flex;
@@ -77,6 +98,8 @@ a:hover{
 .welcome_container
 {
   margin-top: 5vh;
+      width: 100vw;
+
 }
 .card:hover{
   background-color: rgb(243, 164, 164);
@@ -114,16 +137,20 @@ button:hover {
 .move2 {
     padding: 20px;
     text-align: center;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
 }
-.home {
+/* .home {
     width: 200px;
     padding: 10px;
+    margin-top: 5vh;
     background-color: rgb(240, 169, 169);
     text-align: center;
 }
 .home:hover {
     opacity: 0.8;
-}
+} */
 .move {
   text-align: center;
   height: 18vh;

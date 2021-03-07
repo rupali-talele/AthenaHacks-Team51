@@ -1,14 +1,14 @@
 html,body {
 	height: 100% !important;
 	margin: 0;
-	background-color: #fff;
+	
     color: #333;
     font-family: "Coda",sans-serif;
     font-size: 16px;
     line-height: 1.42857;
 	overflow-x: auto;
 	max-width: 100%;
-	background-color: #ccc;
+	background-color:  #BFD8D2;
 }
 .answers
 {
@@ -44,7 +44,7 @@ h1 {
 .move {
   text-align: center;
   height: 18vh;
-  background-color: rgb(233, 97, 97);
+  background-color: rgb(240, 169, 169);
   display: flex;
   align-items: center;
   justify-content: center;
