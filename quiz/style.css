@@ -38,7 +38,9 @@ h1 {
 
 }
 
-
+.move {
+  text-align: center;
+}
 
 .quiz-section {
 	padding: 160px 0;
@@ -116,7 +118,7 @@ h1 {
 /*
  QUIZ WEBSITE CONTENT ELEMENTS
  */
- 
+
  .p {
     margin: 0 auto 20px;
 	width: 600px;
@@ -128,7 +130,7 @@ h1 {
 	margin-bottom: 10px;
 	line-height: 1.0;
 }
- 
+
 .section-heading {
 	position: relative;
 	padding-bottom: 15px;
@@ -164,7 +166,7 @@ h1 {
 }
 .button_header:hover{
      opacity: 0.8;
-	 
+
 }
 
 .button {
@@ -206,12 +208,12 @@ ul, ol {
 .invisible {
 	display: none;
 	}
-	
+
 	a, u {
     text-decoration: none;
 }
 
-a { color: inherit; } 
+a { color: inherit; }
 
 #brief {
 max-width: 1170px;
@@ -222,7 +224,7 @@ padding-left: 15px;
 padding-right: 15px;
 }
 
-#results_screen { 
+#results_screen {
 max-width: 1170px;
 position: center;
 margin-left: auto;

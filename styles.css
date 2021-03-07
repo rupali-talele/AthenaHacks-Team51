@@ -56,8 +56,6 @@ button:hover {
 
 }
 .icon {
-  width: 100px;
-  height: 130px;
   -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -83,7 +81,7 @@ button:hover {
     padding-top: 16px;
   }
   
-   li {
+   ul, li {
     list-style: none;
   }
   /* Change styles for span and cancel button on extra small screens */
