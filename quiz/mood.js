@@ -18,21 +18,14 @@ const opt3 = document.querySelector(".option3")
 const opt4 = document.querySelector(".option4")
 
 const questions = [
-    {
-        'id': '1',
-        'question':'What superpower do you want to have?',
-        'options': ['Flying', 'Invisibility', 'Shape-shifting','Mind reading'],
-    },
-    {
-        'id': '2',
-        'question':"Where would you like to explore the most?",
-        'options': ['A snow mountain', 'A dark forest', 'A sunny waterfront', 'Underwater coral reef'],
-    },
-    {
-         'id': '3',
-         'question':"Which of these would your friends describe you best?",
-         'options':['Shy', 'Outgoing', 'Curious', 'Funny'],
-    }
+        'question':"Good morning, [NAME]!, How are you feeling today? (can select multiple)",
+        'options':['happy', 'sad',
+                    'calm', 'anxious',
+                    'confident', 'scared',
+                    'focused', 'distracted',
+                    'energetic', 'stressed',
+                    'hopeful', 'angry',
+                    'Motivated', 'confused']
 ]
 
 totalQuestionsSpan.innerHTML = questions.length
@@ -134,17 +127,4 @@ function answersTracker(){
         answersTrackerContainer.appendChild(div);
     }
 }
-
-//Update the answers tracker elements
-// function updateAnswersTracker(newClass){
-//     answersTrackerContainer.children[index -1].classList.add(newClass)
-// }
-
-//Displays the quiz-over page if quiz is over
-function quizOver(){
-    document.querySelector(".quiz-over").classList.add("show")
-}
-
-function enterhomepage(){
-    window.location.reload();
-}
+\

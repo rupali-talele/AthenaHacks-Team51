@@ -25,23 +25,27 @@ function startGame(){
     //reset timer
     second = 0;
     minute = 1;
-    hour = 0;
     var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 mins 0 secs";
+    timer.innerHTML = "1 mins 0 secs";
     clearInterval(interval);
+    startTimer();
 }
 
 // @description game timer
-var second = 0, minute = 0; hour = 0;
+var second = 0, minute = 1; hour = 0;
 var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
+    var timer = document.querySelector(".timer");
     interval = setInterval(function(){
-        timer.innerHTML = minute+"mins "+second+"secs";
-        second--;
+        timer.innerHTML = minute+" mins "+second+" secs";
         if(second == 0){
             minute--;
             second=60;
+        }
+        second--;
+        if(second == 0 && minute == 0){
+            congratulations()
         }
     },1000);
 }
@@ -49,24 +53,21 @@ function startTimer(){
 
 // @description congratulations when all cards match, show modal and moves, time and rating
 function congratulations(){
-    if (matchedCard.length == 8){
-        clearInterval(interval);
-        finalTime = timer.innerHTML;
+    clearInterval(interval);
 
-        // show congratulations modal
-        modal.classList.add("show");
+    // show congratulations modal
+    let modal = document.getElementById("popup1")
+    modal.classList.add("show");
 
-        // declare star rating variable
-        var smileRating = document.querySelector(".smiles").innerHTML;
+    // declare star rating variable
+    var smileRating = document.querySelector(".smiles").innerHTML;
 
-        //showing move, rating, time on modal
-        document.getElementById("finalMove").innerHTML = moves;
-        document.getElementById("smileRating").innerHTML = smileRating;
-        document.getElementById("totalTime").innerHTML = finalTime;
+    //showing move, rating, time on modal
+    document.getElementById("smileRating").innerHTML = smileRating;
 
-        //closeicon on modal
-        closeModal();
-    };
+    //closeicon on modal
+    closeModal();
+
 }
 
 
