@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>A breathing exercise</title>
+</head>
+<body>
+    <h1>
+        Breathing Exercise
+    </h1>
+    <img width="500" height="500"
+        src="../../image/breathe.gif"/>
+
+    <div class="button btn">
+        <button type="button" onclick="next()" class="btn">Next</button>
+    </div>
+</div>
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Congratulations</h2>
+        <a class="close" href=# >×</a>
+        <div class="content-1">
+            Congratulations you've completed the exercise!
+        </div>
+        <div class="content-2">
+            <p>You Earned:  <span id=smileRating></span>smile(s)</p>
+        </div>
+        <button id="play-again" onclick="playAgain()">
+            Play again?
+        </button>
+    </div>
+</div>
+<script src="../breathing.js"></script>
+
+</body>
+</html>
+
