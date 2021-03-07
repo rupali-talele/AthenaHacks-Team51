@@ -54,7 +54,8 @@ function startTimer(){
 // @description congratulations when all cards match, show modal and moves, time and rating
 function congratulations(){
     clearInterval(interval);
-
+      window.localStorage.setItem("smiles",Number(window.localStorage.getItem("smiles"))+1)
+   console.log(window.localStorage.getItem("smiles"))
     // show congratulations modal
     var modal = document.getElementById("modal")
     modal.style.display = "block"

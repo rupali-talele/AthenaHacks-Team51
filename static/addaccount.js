@@ -37,7 +37,7 @@ function addaccountinfo()
             if(this.response["status"]=="success")
             {
                 console.log(this.response)
-                window.location.replace("http://127.0.0.1:5000/static/welcome.html");
+                window.location.replace("http://127.0.0.1:5000/static/quiz/quiz.html");
             }  
         }
     }  

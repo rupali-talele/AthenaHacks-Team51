@@ -1,5 +1,5 @@
 body {
-  background-color: #BFD8D2;
+  background-color: #ccc;
   font-family: 'Coda', sans-serif;
 }
 h2 {
@@ -15,6 +15,10 @@ p {
   text-align: center;
 }
 
+#checkout
+{
+  display: none;
+}
 
 .center
 {
@@ -28,10 +32,17 @@ form {
     margin:auto;
 }
 
+.text
+{
+  width: 60vw;
+  margin: 5vh auto;
+}
+
 .cards
 {
   display: flex;
-  width: 80vw;
+  width: 60vw;
+  flex-wrap: wrap;
   
 }
 
@@ -39,7 +50,8 @@ form {
 .cards_playgames
 {
   display: flex;
-  width: 80vw;
+width: 100vw;
+justify-content: center;
   
 }
 a{
@@ -86,7 +98,7 @@ input[type=text], input[type=password] ,.form-select{
     padding: 10px 10px;
     margin: 5px 0;
     display: inline-block;
-    border: 2px solid rgb(192, 191, 191);
+    border: 2px solid #ccc;
     box-sizing: border-box;
 }
 .link {
@@ -111,23 +123,10 @@ button {
 button:hover {
     opacity: 0.8;
 }
-.move2 {
-    padding: 20px;
-    text-align: center;
-}
-.home {
-    width: 200px;
-    padding: 10px;
-    background-color: rgb(240, 169, 169);
-    text-align: center;
-}
-.home:hover {
-    opacity: 0.8;
-}
 .move {
   text-align: center;
   height: 18vh;
-  background-color: rgb(240, 169, 169);
+  background-color: rgb(233, 97, 97);
   display: flex;
   align-items: center;
   justify-content: center;
