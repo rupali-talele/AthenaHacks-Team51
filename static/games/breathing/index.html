@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div class="move">
+        <img src="../../image/egao.png" width="400" />
+    </div>
+    <div class="container">
+
+        <div class="header">
+        <h1>Breathing Exercise</h1>
+        This is a simple exercise to encourage deep breathing. Just relax!
+
+        <div id="introbox1" class="quizintrobox">
+            <button  id="startQuizBtn" class="btn" onclick="startGame();" type="button">Start Exercise</button>
+        </div>
+        </div>
+    
+    <div id="start">
+        <div class="timer"></div>
+        <img width="400" height="400" src="../../image/breathe.gif" />
+    </div>
+ 
+
+        <div id="modal">
+            <div id="modal-dialog">
+                <div id="modal-body">
+                    <div id="modal-container">
+                        <div id="modal-content">
+                            <a id="closebtn" onclick="gohome()" href=#>×</a>
+                            <h2>Congratulations!!</h2>
+                           
+                            <div class="content-1">
+                                Congratulations you've completed the exercise!
+                            </div>
+                            <div class="content-2">
+                                You Earned one smile
+                                <i class="smiles"><img src="../../image/smilesmall.png"></i>
+                            </div>
+                            <button id="play-again" class="btn" onclick="playAgain()">
+                                Play again?
+                                <button id="backhome" class="btn" onclick="gohome()">
+                                    Back to homepage
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- <div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Congratulations</h2>
+        <a class="close" href=#>×</a>
+        <div class="content-1">
+            Congratulations you've completed the exercise!
+        </div>
+        <div class="content-2">
+            You Earned one smile
+            <i class="smiles"><img src="../../image/smilesmall.png"></i>
+        </div>
+        <button id="play-again" onclick="playAgain()">
+            Play again? 
+                <button id="backhome" onclick="backhome()">
+                    Back to homepage
+                </button>
+    </div>
+    </div>
+</div> -->
+</body>
+<script src="app.js"></script>
+</html>

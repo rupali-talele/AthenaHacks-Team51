@@ -1,0 +1,8 @@
+#app.yaml
+runtime: python37
+
+# env_variables:
+#   CLOUD_SQL_USERNAME: athenahacks
+#   CLOUD_SQL_PASSWORD: athenahacks
+#   CLOUD_SQL_DATABASE_NAME: athenahacks_51
+#   CLOUD_SQL_CONNECTION_NAME: Rupali's Network
