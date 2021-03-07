@@ -1,8 +1,4 @@
-
-
-
-
-var currentQuestion = 2; //
+var currentQuestion = 2; 
 
 
 
@@ -75,10 +71,10 @@ function showQuestion(id) {
 
 function getEndingSentence() {
     var quizRadio = document.getElementsByName("rq");
-	var content = ''; //It's easier to handle if we simply merge all sentences into a string
+	var content = ''; 
     for (var i = 0; i < quizRadio.length; i++) {
         if (quizRadio[i].checked) {
-            content += quizRadio[i].getAttribute("data-endingsentence"); //these are the attributes used to generate quiz answers
+            content += quizRadio[i].getAttribute("data-endingsentence"); 
         }
     }
 	return content;
