@@ -42,7 +42,7 @@ totalQuestionsSpan.innerHTML = questions.length
 
 function load(){
     questionNumberSpan.innerHTML = index + 1
-    question.innerHTML = questions[currentIndex].q;
+    question.innerHTML = questions[currentIndex].question;
     opt1.innerHTML = questions[currentIndex].options[0]
     opt2.innerHTML = questions[currentIndex].options[1]
     opt3.innerHTML = questions[currentIndex].options[2]
@@ -146,11 +146,11 @@ function updateAnswersTracker(newClass){
 //Displays the quiz-over page if quiz is over
 function quizOver(){
     document.querySelector(".quiz-over").classList.add("show")
-    correctAnswersSpan.innerHTML = score;
-    totalQuestionsSpan2.innerHTML = questions.length
-    percentageSpan.innerHTML=Math.round((score/questions.length)*100) + "%"
+    // correctAnswersSpan.innerHTML = score;
+    // totalQuestionsSpan2.innerHTML = questions.length
+    // percentageSpan.innerHTML=Math.round((score/questions.length)*100) + "%"
 }
 
-function tryAgain(){
+function enterhomepage(){
     window.location.reload();
 }
