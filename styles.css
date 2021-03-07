@@ -1,3 +1,20 @@
+body {
+  background-color: #ccc;
+  font-family: 'Coda', sans-serif;
+}
+h2 {
+  padding: 10px;
+  text-align: center;
+  
+}
+h3, h4 {
+padding-top: 20px;
+
+}
+p {
+  text-align: center;
+}
+
 form {
     border: 3px solid #f1f1f1
 }
@@ -9,6 +26,17 @@ input[type=text], input[type=password] {
     border: 2px solid #ccc;
     box-sizing: border-box;
 }
+.link {
+  background-color: lightcoral;
+  color:black;
+  margin-left: 20px;
+  width: 300px;
+}
+.link:hover {
+  opacity: 0.8;
+}
+
+
 button {
     background-color: lightblue;
     color: #000;
@@ -19,6 +47,22 @@ button {
 }
 button:hover {
     opacity: 0.8;
+}
+.move {
+  text-align: center;
+}
+.border {
+  border: 1px solid black !important;
+
+}
+.icon {
+  width: 100px;
+  height: 130px;
+  -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border:4px solid black;
+    display:inline-block;
 }
 .imgcontainer {
     text-align: center;
@@ -39,6 +83,9 @@ button:hover {
     padding-top: 16px;
   }
   
+   li {
+    list-style: none;
+  }
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
