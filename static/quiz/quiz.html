@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+    <title></title>
+    <meta content="" name="description">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+ <div class="move">
+    <img src="../image/egao.png" width="400"/>
+	</div>
+<section>
+       
+           
+        
+            <div id ="introbox1" class="quizintrobox">
+                <h1>What is your Spirit Animal?</h1>
+                <button class="button_header" id="startQuizBtn" onclick="startQuiz();document.getElementById('footer').scrollIntoView();" type="button">Start Quiz</button>
+			</div>
+</section>
+
+
+    <section class="section" id="questions">
+        <div class="container" id="brief">
+            <h2 class="section-heading text-center">The MBTI personality type</h2>
+            <p> Have you ever wonder why you are unique from other people? Do you know your own personality? The Myers-Briggs Personality Type Indicator is a popular quiz designed to let you identify your unique personality, strengths, and preferences. This short quiz will let you get to know yourself better! </p>
+    <br>
+            <h2 class="section-heading text-center">Why a Spirit Animal?</h2>
+            <p> On Egao, we pair each personality type with an animal that shares similar characteristics. This animal will be your spirit animal that you can rely on, share your feelings and emotions with, and accompany you through your journey. Your spirit animal will also be your avatar on Egao, where you can check in and check out with at anytime. </p>
+        </div>
+
+        <div class="container" id="quiz-questions">
+
+            <div class="question invisible" id="question-1">
+                <form>
+                    <h2 class="section-heading text-center">If you could have any Super Power, What would it be?</h2>
+
+
+                    <ul class="center answers">
+                    <li><input data-endingsentence="Flying " name="rq" onclick="setAnswerButton()" type="radio">Flying</li>
+                    <li><input data-endingsentence="Invisibility " name="rq" onclick="setAnswerButton()" type="radio">Invisibility</li>
+                    <li><input data-endingsentence="Shape-Shifting " name="rq" onclick="setAnswerButton()" type="radio">Shape-Shifting</li>
+                    <li><input data-endingsentence="Mind Reading" name="rq" onclick="setAnswerButton()" type="radio">Mind-Reading</li>
+                   </ul>
+                </form>
+            </div>
+
+
+            <div class="question invisible" id="question-2">
+                <form>
+                    <h2 class="section-heading text-center">What would like to Explore The Most</h2>
+
+
+                    <ul class="center answers">
+                    <li><input data-endingsentence="A snow mountain" name="rq" onclick="setAnswerButton()" type="radio">A snow mountain</li>
+                    <li><input data-endingsentence="A dark forest " name="rq" onclick="setAnswerButton()" type="radio">A dark forest</li>
+                    <li><input data-endingsentence="A sunny waterfront" name="rq" onclick="setAnswerButton()" type="radio">A sunny waterfront</li>
+                    <li><input data-endingsentence="Underwater coral reef" name="rq" onclick="setAnswerButton()" type="radio">Underwater Coral Reef</li>
+                    </ul>
+                </form>
+            </div>
+
+
+            <div class="question invisible" id="question-3">
+                <form>
+                    <h2 class="section-heading text-center">How would you describe yourself?</h2>
+
+
+                    <ul class="center answers">
+                    <li><input data-endingsentence="Shy " name="rq" onclick="setAnswerButton()" type="radio">Shy</li>
+                    <li><input data-endingsentence="Adventureous " name="rq" onclick="setAnswerButton()" type="radio">Adventureous</li>
+                    <li><input data-endingsentence="Curious " name="rq" onclick="setAnswerButton()" type="radio">Curious</li>
+                    <li><input data-endingsentence="Funny " name="rq" onclick="setAnswerButton()" type="radio">Funny</li>
+
+                </ul>
+                </form>
+            </div>
+
+
+
+
+            <div class="invisible" id="confirm_answer">
+                <br>
+                <br>
+                <button class="button" onclick="nextQuestion()" type="button">Next Question</button>
+            </div>
+
+
+            <div class="invisible" id="results_screen">
+                <h2 class="section-heading text-center">And your Spirit Animal is?</h2>
+                <img width="400" height="400"
+                src="bunnyhi.gif"/>
+                         <h1>Your spirit animal is ... <br />
+                            A house bunny! <br />
+                            As an ISFP(introvert-sensing-feeling-perceiving), You enjoy meaningful social interactions, modest, considerate and pay attention to details.
+                        </h1>
+                        <a href="../welcome.html">Go To Home Page</a>
+					</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="footer-section section" id="footer">
+        <div class="container">
+            <div class="footer-copyright">
+                <ul class="list-inline right">
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <script src="quiz.js" type="text/javascript"></script>
+</body>
+
+</html>
